@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="dotaApp">
     <head>
         <meta charset="UTF-8">
-        <title>Example of Twitter Bootstrap 3 Unstyled Lists</title>
+        <base href="/Dota2/">
+        <title>All About Dota 2</title>
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="resources/css/cover.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </head>
-    <body>
+    <body ng-controller="mainController">
         <div class="site-wrapper">
             <div class="site-wrapper-inner">
                 <div class="cover-container">
@@ -18,23 +23,15 @@
                             <li><a href="#">Heroes</a></li>
                             <li><a href="#">Guides</a></li>
                             <li><a href="#">Match Up</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="inner cover">
-                        <h1 class="cover-heading">In development</h1>
-
-                        <p class="lead">This is All about Dota 2 Web Application. In development !</p>
-
-                        <p class="lead">
-                            <a href="#" class="btn btn-lg btn-default">Learn more</a>
-                        </p>
-                    </div>
+                    <div class="page {{ pageClass }}" ng-view></div>
                     <div class="mastfoot">
                         <div class="inner">
                             <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a
-                                    href="https://twitter.com/mdo">@mdo</a>.</p>
+                                    href="https://www.facebook.com/PhuLe.Soto">Phu Le</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -43,5 +40,6 @@
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
     </body>
 </html>                                		

@@ -1,0 +1,27 @@
+.page {
+    bottom      : 0;
+    padding-top : 25px;
+    text-align  : center;
+    top         : 0;
+    width       : 100%;
+}
+
+.page h1 {
+    font-size : 60px;
+}
+.page a {
+    margin-top : 50px;
+}
+
+.page-home {
+    background : #245269;
+    color      : #00907c;
+}
+.page-about {
+    background : #E59400;
+    color      : #a55400;
+}
+.page-contact {
+    background : #ffa6bb;
+    color      : #9e0000;
+}
