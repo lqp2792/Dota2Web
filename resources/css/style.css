@@ -1,27 +1,39 @@
-.page {
-    bottom      : 0;
-    padding-top : 25px;
-    text-align  : center;
-    top         : 0;
-    width       : 100%;
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+	color : #46b8da;
 }
 
-.page h1 {
-    font-size : 60px;
-}
-.page a {
-    margin-top : 50px;
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+	color            : #333;
+	text-shadow      : none; /* Prevent inheritence from `body` */
+	background-color : #fff;
+	border           : 1px solid #fff;
 }
 
-.page-home {
-    background : #245269;
-    color      : #00907c;
+/*
+ * Base structure
+ */
+html,
+body {
+	height : 100%;
 }
-.page-about {
-    background : #E59400;
-    color      : #a55400;
-}
-.page-contact {
-    background : #ffa6bb;
-    color      : #9e0000;
+
+body {
+	color                   : #fff;
+	text-align              : center;
+	text-shadow             : 0 1px 3px rgba(0, 0, 0, .5);
+	background              : url("../../images/dota-logo.jpg") no-repeat center fixed;
+	-webkit-background-size : cover;
+	-moz-background-size    : cover;
+	-o-background-size      : cover;
+	background-size         : cover;
 }
