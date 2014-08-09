@@ -3,6 +3,7 @@
  */
 var dotaApp = angular.module ('dotaApp', ['ngRoute', 'ngAnimate']);
 dotaApp.config (function ($routeProvider, $locationProvider) {
+
     $routeProvider.when ('/', {
         templateUrl: 'pages/home.html',
         controller: 'mainController'
@@ -17,6 +18,7 @@ dotaApp.config (function ($routeProvider, $locationProvider) {
         controller: 'heroesController'
     });
     $locationProvider.html5Mode (true);
+    $locationProvider.hashPrefix = '!';
 });
 dotaApp.controller ('mainController', function ($scope) {
     $scope.pageClass = 'page-home';

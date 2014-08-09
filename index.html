@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="dotaApp">
-<head>
-    <meta charset="UTF-8">
-    <base href="/Dota2Web/">
-    <title>All About Dota 2</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-    <script src="resources/js/script.js"></script>
-</head>
-<body ng-controller="mainController">
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <base href="/Dota2Web/">
+        <title>All About Dota 2</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="resources/js/script.js"></script>
+    </head>
+    <body ng-controller="mainController">
         <h3 class="text-muted">All About Dota 2</h3>
-        <ul class="nav nav-justified">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#heroes">Heroes</a></li>
-            <li><a href="#guides">Guides</a></li>
-            <li><a href="#match-up">Match Up</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div ng-view></div>
-    </div>
-
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+        <div class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#heroes">Heroes</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#match-up">Match Up</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container" ng-view>
+        </div>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>                                		
