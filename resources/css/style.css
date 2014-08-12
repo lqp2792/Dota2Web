@@ -164,11 +164,16 @@ dd#veins:target {
 dd#cascada:target {
     opacity : 1;
 }
-
-figure, figure img {
+#popup {
     width    : 500px;
     height   : 333px;
     overflow : hidden;
+
+}
+figure, figure img {
+    width  : 500px;
+    height : 333px;
+
 }
 figcaption {
     font-family : Baskerville, Garamond, "Times New Roman", serif;
@@ -179,8 +184,35 @@ figcaption {
     color       : #fff;
     position    : relative;
     bottom      : 400px;
-    transition  : 1s all;
+    transition  : .5s all;
 }
 figure:hover figcaption {
     bottom : 340px;
+}
+
+#cardfan, #cardfan img {
+    width      : 256px;
+    height     : 144px;
+    transition : .6s transform ease-out;
+}
+#cardfan img {
+    box-shadow       : 12px 12px 10px rgba(0, 0, 0, 0.2);
+    position         : absolute;
+    transform-origin : center 600px;
+}
+#cardfan img[alt="Axe"] {
+    transform : rotate(-6deg);
+}
+#cardfan img[alt="Chaos Knight"] {
+    transform : rotate(6deg);
+}
+#cardfan:hover img[alt="Kunkka"] {
+    transform : rotate(-24deg);
+}
+#cardfan:hover img[alt="Chen"] {
+    transform : rotate(24deg);
+}
+
+img[alt="Chen"]:hover, img[alt="Axe"]:hover {
+    z-index : 2;
 }
